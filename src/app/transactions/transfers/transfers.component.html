@@ -1,0 +1,64 @@
+<h2>Realiza tu transferencia</h2>
+<hr />
+
+<!-- <div class="row" >
+  <div class="col">
+    <h1>La tabla aquí</h1>
+  </div>
+</div> -->
+
+<div class="registration-form">
+  <form (ngSubmit)="addTransaction()">
+    <!-- TODO: change id for databinding -->
+    <div class="form-group">
+      <input
+        type="text"
+        class="form-control item"
+        name="payer"
+        placeholder="Número de cuenta ordenante"
+        [(ngModel)]="transferInput.payer"
+      />
+    </div>
+    <div class="form-group">
+      <input
+        type="text"
+        class="form-control item"
+        name="beneficiary"
+        placeholder="Número de cuenta beneficiario"
+        [(ngModel)]="transferInput.beneficiary"
+      />
+    </div>
+    <div class="form-group">
+      <input
+        type="text"
+        class="form-control item"
+        name="value"
+        placeholder="Valor monetario de la transferencia"
+        [(ngModel)]="transferInput.value"
+      />
+    </div>
+    <div class="form-group">
+      <input
+        type="text"
+        class="form-control item"
+        name="date"
+        placeholder="Fecha de la transferencia"
+        [(ngModel)]="transferInput.date"
+      />
+    </div>
+    <div class="form-group">
+      <input
+        type="text"
+        class="form-control item"
+        name="reference"
+        placeholder="Referencia de la transferencia"
+        [(ngModel)]="transferInput.reference"
+      />
+    </div>
+    <div class="form-group">
+      <button type="submit" class="btn create-account">
+        Realizar transferencia
+      </button>
+    </div>
+  </form>
+</div>
